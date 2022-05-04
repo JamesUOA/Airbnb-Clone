@@ -83,7 +83,7 @@ export async function getStaticProps() {
 }
 
 export function useHorizontalScroll() {
-  const elRef = useRef();
+  const elRef = useRef<Home>();
   useEffect(() => {
     const el = elRef.current;
     if (el) {
